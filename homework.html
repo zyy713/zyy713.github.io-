@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title style="text-align:center">Picking Fruit Now</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+
+    <style media="screen">
+      body{
+        background-image:url('u=282743703,3032696239&fm=253&fmt=auto&app=138&f=JPEG.webp');
+        background-size:cover;
+        background-position:center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        margin: 0;
+      }
+    h1{
+      font-family: Arial,sans-serif;
+      font-size: 200px;
+      color: white;
+      text-align: center;
+    }
+
+    </style>
+  </head>
+  <body style="background-color:#06752E; text-align:center;>
+
+    <h1 style="color:white; font-family:Arial,sans-serif; front-size:500px;">欢迎来到水果农场</h1>
+    <hr>
+
+    <img src="u=3838773608,130177417&fm=253&fmt=auto&app=138&f=PNG.webp" alt="这是一个红苹果" width="170px" style="text-align:center">
+    <br><br>
+
+
+      <label  style="color:#06752E" onclick="sayHello()">昵称</label>
+      <input type="text" placeholder="该怎么称呼您?" style="width:100px; height:30px">
+      <p class="container">请点击"昵称"（有点写乱了实在改不过来了）</p>
+
+    <hr><br>
+    <a href="anotherpage1.html">
+    <button id="button" onclick:"sayHello()">
+      进入果园
+
+    </a>
+    </button>
+
+    <a href="stoppage.html">
+    <button id="button1" onclick:"sayNo()">不想采摘</button>
+    </a>
+
+    <script>
+      function sayHello(){
+        var response = prompt('怎么称呼您呢?')
+        alert("好的！" + response + ",期待您可以在水果农场里收获满满!");
+      };
+
+      function sayNo(){
+        var response = prompt('怎么称呼您呢?')
+        alert("好吧！" + response + "，希望你可以玩到其他的东西～");
+      };
+    </script>
+  </body>
+</html>

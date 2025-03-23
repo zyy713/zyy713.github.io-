@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #87CEEB;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+  background-color: #4CAF50;
+  color: white;
+  border: 2px soild #4CAF50;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  cursor: :pointer;
+  box-shadow: :2px 2px 5px rgba(0,0,0,0.3);
+  opacity: 0.8
+}
+button:hover{
+  background-color: #45a049;
+}
+
+.game-container {
+    width: 800px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    border: 4px solid #06752E;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.status-bar {
+    height: 50px;
+    background-color: #99CC66;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.money {
+    color: #003300;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.game-area {
+    height: 550px;
+    background-color: #CCCC00;
+    position: relative;
+}
+
+.tree {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #CCCC00;
+    background-size: contain;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+.fruit {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.fruit:hover {
+    transform: scale(1.1);
+}
+
+.apple::before {
+    content: "🍎";
+}
+
+.orange::before {
+    content: "🍊";
+}
+
+.pear::before {
+    content: "🍐";
+}
+
+.money-particle {
+    position: absolute;
+    color: gold;
+    font-weight: bold;
+    pointer-events: none;
+    animation: float-up 1s forwards;
+}
+
+@keyframes float-up {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+}

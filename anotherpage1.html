@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>进入果园了</title>
+    <link rel="stylesheet" href="style.css">
+    <style media="screen">
+      body{
+        background-image:url('未命名作品.jpg');
+        background-size:cover;
+        background-position:center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        margin: 0;
+    </style>
+  </head>
+
+  <body>
+    <div class="game-container" style="color:">
+        <div class="status-bar">
+            <div class="money">金钱: <span id="money-count">0</span></div>
+        </div>
+        <div class="game-area">
+            <div class="tree"></div>
+            <div id="fruits-container"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <br><hr>
+      <button style=“background-color:#06752E;width:100px;height:100px;font-size:20px;font-family:Arial,sans-serif;padding:3px” onclick="sayBye()">结束采摘</button>
+      <script>
+        document.write('');
+
+        function sayBye(){
+          var response = prompt('你得到了多少钱?')
+          alert("哇！竟然有" + response + "元,真是收获满满的一天!");
+        };
+        function add(a,b){
+          return a+b;
+        }
+
+        //sayBye();
+      </script>
+
+  </body>
+</html>

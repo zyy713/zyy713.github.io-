@@ -1,0 +1,19 @@
+.container7{
+  font-family: Arial,sans-serif;
+  font-size: 100px;
+  color: black;
+  text-align: center;
+}
+body{
+  background-image:url('未命名作品.jpg');
+  background-size:cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.container12{
+  font-family: Arial,sans-serif;
+  font-size: 50px;
+  color: #FFFFFF;
+  text-align: center;
+}
